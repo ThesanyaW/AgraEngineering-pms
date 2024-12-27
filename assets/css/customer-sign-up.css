@@ -1,0 +1,98 @@
+body {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('solar-panels.jpg');*/
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Title Styling */
+.page-title {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #ffffff; /* Dark text color for contrast */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add space above the title */
+    margin-bottom: 30px; /* Add space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font style */
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+.main-wrapper {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between containers */
+    align-items: flex-start; /* Top alignment */
+    gap: 20px; /* Reduce the space between containers */
+    max-width: 1200px; /* Adjust overall layout width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+.sign-up-container,
+.other-form-container {
+    flex: 1; /* Allow both containers to take equal width */
+    max-width: 70%; /* Expand container width (70% of layout width) */
+    background: rgba(113, 184, 215, 0.75); /* Background styling */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px; /* Internal spacing */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.other-form-container {
+    background: rgba(253, 136, 39, 0.69); /* Semi-transparent orange */
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fd8827;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffab60;
+    transform: scale(1.05);
+}
+
+.logo-image {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sign-up-container,
+    .other-form-container {
+        max-width: 90%;
+    }
+}
