@@ -24,6 +24,7 @@ body {
     border-radius: 95px; /* Rounded corners */
     text-align: center; /* Centers text inside the container */
     border: none; /* Removed border for a cleaner look */
+    position: relative; /* Ensures child elements are positioned relative to this container */
 }
 
 /* Input field styling */
@@ -31,7 +32,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    width: 100%; /* Input fields stretch to the width of the container */
+    width: 90%; /* Input fields stretch to the width of the container */
     border: 1px solid #ccc; /* Light border for better visibility */
 }
 
@@ -138,12 +139,16 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
     text-align: center; /* Center-align all text */
     margin: auto; /* Center the container on the page */
+    position: relative; /* Ensures child elements are positioned relative to this container */
 }
 
 /* Logo Styling */
 .logo-image {
     width: 100px; /* Fixed width for the logo */
-    margin-bottom: 15px; /* Spacing below the logo */
+    margin: 0 auto 15px; /* Center horizontally and add spacing below */
+    display: block; /* Ensures the image behaves like a block element */
+    position: relative; /* Position relative within the container */
+    top: 0; /* Aligns to the top */
 }
 
 /* Select User Type Text */
@@ -194,5 +199,57 @@ h2 {
     font-weight: bold; /* Bold text */
     color: #333; /* Dark text color for readability */
     font-size: 14px; /* Text size */
+}
+
+/* Main Wrapper: Flexbox Layout for Two Columns */
+.main-wrapper {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between the two sections */
+    align-items: flex-start; /* Align sections at the top */
+    gap: 150px; /* Space between the containers */
+    max-width: 7000px; /* Optional: Limit the maximum width of the layout */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Left-hand Side: Sign-up Container */
+.sign-up-container {
+    flex: 1.5; /* Allow the container to grow/shrink based on space */
+    max-width: 55%; /* Limit the width to 45% of the layout */
+    background: rgba(113, 184, 215, 0.75); /* Light blue background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Right-hand Side: Other Form */
+.other-form-container {
+    flex: 1.5; /* Allow the container to grow/shrink based on space */
+    max-width: 55%; /* Limit the width to 45% of the layout */
+    background: rgba(253, 136, 39, 0.69); /* Semi-transparent orange */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center-align sections */
+    }
+
+    .sign-up-container, .other-form-container {
+        max-width: 100%; /* Allow full width for both sections */
+    }
+}
+
+/* Logo Styling */
+.logo-image {
+    width: 100px; /* Fixed width for the logo */
+    margin: 0 auto 20px; /* Center horizontally and add spacing below */
+    display: block; /* Ensures the image behaves like a block element */
 }
 
