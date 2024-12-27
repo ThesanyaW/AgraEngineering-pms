@@ -1,0 +1,9 @@
+body {
+    background-image: url('../images/Background.png'); /* Relative path to the image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center center; /* Centers the image */
+    margin: 0; /* Removes default margin for body */
+    font-family: 'Roboto', sans-serif; /* Optional: Ensures consistent font styles */
+}
