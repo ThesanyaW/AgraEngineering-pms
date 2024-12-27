@@ -8,6 +8,24 @@ body {
     padding: 0;
 }
 
+/* Page Title Styling */
+.page-title {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #ffffff; /* Dark text color for contrast */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add space above the title */
+    margin-bottom: 30px; /* Add space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font style */
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
 .main-wrapper {
     display: flex; /* Flexbox for layout */
     justify-content: space-between; /* Space between containers */
