@@ -14,17 +14,31 @@ body {
     font-weight: bold; /* Make the text bold */
     color: #ffffff; /* Dark text color for contrast */
     text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Add space above the title */
-    margin-bottom: 30px; /* Add space below the title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
-    font-family: 'Roboto', sans-serif; /* Ensure consistent font style */
+    margin-top: 20px; /* Space above the title */
+    margin-bottom: 30px; /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Consistent font style */
+    position: relative; /* Allows animation positioning */
+    animation: slide-in 2s ease-out forwards; /* Apply animation */
+}
+
+/* Keyframes for Left-to-Right Movement */
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    to {
+        transform: translateX(0); /* Stop at the center */
+    }
 }
 
 @media (max-width: 768px) {
     .page-title {
         font-size: 2rem; /* Smaller font size for mobile */
+        animation-duration: 1.5s; /* Faster animation for smaller screens */
     }
 }
+
 
 .main-wrapper {
     display: flex; /* Flexbox for layout */
@@ -49,6 +63,7 @@ body {
 
 .other-form-container {
     background: rgba(253, 136, 39, 0.69); /* Semi-transparent orange */
+    margin-top: 50px; /* Add space above the title */
 }
 
 
