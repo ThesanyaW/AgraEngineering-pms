@@ -26,17 +26,6 @@ body {
     border: none; /* Removed border for a cleaner look */
 }
 
-/* Logo Styling */
-.logo-image {
-    width: 100px; /* Slightly larger for better visibility */
-    margin-top: -40px; /* Moves the logo upwards */
-    margin-bottom: 20px; /* Space below the logo */
-    display: block; /* Ensures the logo is treated as a block-level element for centering */
-    margin-left: auto; /* Centers the logo horizontally */
-    margin-right: auto; /* Centers the logo horizontally */
-}
-
-
 /* Input field styling */
 .form-control {
     margin-bottom: 10px;
@@ -101,7 +90,7 @@ body {
 
 /* Sign-up Button Styling */
 .btn-sign-up {
-    background: transparent; /* Removes background color */
+    background: rgba(113, 184, 215, 1); /* Removes background color */
     border: none; /* No border */
     border-radius: 10px;
     padding: 15px;
@@ -138,3 +127,72 @@ body {
     color: #333; /* Sets text color */
     font-size: 14px; /* Adjusts font size */
 }
+
+/* Main container styling */
+.uType-container {
+    background: rgba(253, 136, 39, 0.69); /* Orange transparent background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px; /* Internal spacing */
+    max-width: 700px; /* Adjusted for wider layout */
+    width: 90%; /* Responsive width */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-align: center; /* Center-align all text */
+    margin: auto; /* Center the container on the page */
+}
+
+/* Logo Styling */
+.logo-image {
+    width: 100px; /* Fixed width for the logo */
+    margin-bottom: 15px; /* Spacing below the logo */
+}
+
+/* Select User Type Text */
+h2 {
+    color: white; /* White text color */
+    margin-bottom: 30px; /* Spacing below the heading */
+    font-size: 24px; /* Font size for the heading */
+}
+
+/* User Buttons Container */
+.user-buttons {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Equal spacing between buttons */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Spacing above the buttons */
+}
+
+/* Button Styling */
+.btn-user {
+    background: white; /* White background for contrast */
+    border: none; /* Remove default button borders */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Internal padding for the button */
+    width: 120px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center-align button content */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.btn-user:hover {
+    transform: translateY(-5px); /* Move the button up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* User Image Styling */
+.user-image {
+    width: 60px; /* Fixed width for user images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Spacing below the image */
+}
+
+/* Button Text */
+.btn-user p {
+    margin: 0; /* Reset default margin */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color for readability */
+    font-size: 14px; /* Text size */
+}
+
