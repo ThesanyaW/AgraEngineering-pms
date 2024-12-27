@@ -200,3 +200,55 @@ h2 {
     color: #333; /* Dark text color for readability */
     font-size: 14px; /* Text size */
 }
+
+/* Main Wrapper: Flexbox Layout for Two Columns */
+.main-wrapper {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between the two sections */
+    align-items: flex-start; /* Align sections at the top */
+    gap: 150px; /* Space between the containers */
+    max-width: 7000px; /* Optional: Limit the maximum width of the layout */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Left-hand Side: Sign-up Container */
+.sign-up-container {
+    flex: 1.5; /* Allow the container to grow/shrink based on space */
+    max-width: 55%; /* Limit the width to 45% of the layout */
+    background: rgba(113, 184, 215, 0.75); /* Light blue background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Right-hand Side: Other Form */
+.other-form-container {
+    flex: 1.5; /* Allow the container to grow/shrink based on space */
+    max-width: 55%; /* Limit the width to 45% of the layout */
+    background: rgba(253, 136, 39, 0.69); /* Semi-transparent orange */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Internal spacing */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center-align sections */
+    }
+
+    .sign-up-container, .other-form-container {
+        max-width: 100%; /* Allow full width for both sections */
+    }
+}
+
+/* Logo Styling */
+.logo-image {
+    width: 100px; /* Fixed width for the logo */
+    margin: 0 auto 20px; /* Center horizontally and add spacing below */
+    display: block; /* Ensures the image behaves like a block element */
+}
