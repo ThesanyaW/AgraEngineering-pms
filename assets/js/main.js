@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Add event listener for the customer button
+    // Add event listener for the employee button
     const employeeButton = document.getElementById('employee');
     if (employeeButton) {
         employeeButton.addEventListener('click', function() {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Add event listener for the customer button
+    // Add event listener for the staff button
     const staffButton = document.getElementById('staff');
     if (staffButton) {
         staffButton.addEventListener('click', function() {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Add event listener for the customer button
+    // Add event listener for the supplier button
     const supplierButton = document.getElementById('supplier');
     if (supplierButton) {
         supplierButton.addEventListener('click', function() {
